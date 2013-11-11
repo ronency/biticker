@@ -29,13 +29,13 @@ $(function(){
     ticker.html('');
     $.each(currenciesList, function(i, currency){
       var data = dataCenter[currency].averages;
-      var container = $('<div />');
-
-      container.appendTo(ticker)
-        .append('<b>'+currency+'</b><br />')
-        .append('ask: ' + data.ask + '<br />')
-        .append('bid: ' + data.bid + '<br />')
-        .append('last: ' + data.last + '<br />');
+      var html = '<div>'+
+                   '<b>'+currency+'</b><br />'+
+                   'ask: ' + data.ask + '<br />'+
+                   'bid: ' + data.bid + '<br />'+
+                   'last: ' + data.last+
+                 '</div>';
+      ticker.append(html);
     });
   };
   bind('biticker:data-ready', createCurrenciesList);
