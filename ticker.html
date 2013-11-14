@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>biticker - Bitcoin ticker</title>
+  <link type="text/css" rel="stylesheet" href="stylesheets/biticker-generator.css" />
+</head>
+<body>
+  <h1>Bitcoin Currency Widget</h1>
+  <p>Biticker is a lightweight Bitcoin ticker, very easy to customize and embed in your website.</p>
+  <p>Just, select the currency you want, choose a theme, and copy the generated code to your website.</p>
+  <p>That's it. Really.</p>
+  <div class="ticker-editor">
+    Currency:
+    <select id="currency-selector">
+      <option value="USD" selected="selected">USD</option>
+      <option value="AUD">AUD</option>
+      <option value="BRL">BRL</option>
+      <option value="CAD">CAD</option>
+      <option value="CNY">CNY</option>
+      <option value="CZK">CZK</option>
+      <option value="EUR">EUR</option>
+      <option value="GBP">GBP</option>
+      <option value="ILS">ILS</option>
+      <option value="JPY">JPY</option>
+      <option value="NOK">NOK</option>
+      <option value="NZD">NZD</option>
+      <option value="PLN">PLN</option>
+      <option value="RUB">RUB</option>
+      <option value="SEK">SEK</option>
+      <option value="SGD">SGD</option>
+      <option value="ZAR">ZAR</option>
+    </select>
+    Theme:
+    <select name="theme-selector" id="theme-selector">
+      <option value="biticker-light">Light</option>
+      <option value="biticker-dark">Dark</option>
+      <option value="biticker-darkblue">Dark Blue</option>
+      <option value="biticker-darkred">Dark Red</option>
+      <option value="biticker-gray">Gray</option>
+    </select><br />
+    <div class="preview-container">
+      <h3>Widget Preview:</h3>
+      <div id="ticker-container"></div>
+    </div>
+    <textarea id="biticker-single"></textarea>
+  </div>
+  <script type="text/javascript" src="static/js/biticker.js"></script>
+  <script type="text/javascript" src="javascripts/biticker-generator.js"></script>
+</body>
+
+</html>
