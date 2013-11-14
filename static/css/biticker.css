@@ -1,13 +1,3 @@
-
-div.biticker {}
-div.biticker .currency {}
-div.biticker .value {}
-
-textarea {width:100%;height:100px;display:block;clear:both;}
-
-.preview-container {margin-bottom:20px;}
-
-
 .biticker-container {display:inline-block;width:auto;padding:8px 8px 5px;border:solid 1px #666;border-radius:4px;}
 .biticker-container .content {opacity:1;transition:all 500ms;}
 .biticker-container.biticker-loading .content {opacity:0;}

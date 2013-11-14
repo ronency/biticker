@@ -1,6 +1,10 @@
 
 
 (function(){
+  var link = document.createElement("LINK");
+  script.href = 'https://raw.github.com/ronency/biticker/master/static/css/biticker.css';
+  script.type = 'text/css';
+  document.getElementsByTagName("head")[0].appendChild(script);
   var script = document.createElement("SCRIPT");
   script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js';
   script.type = 'text/javascript';
