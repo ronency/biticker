@@ -1,44 +1,62 @@
 
-function trigger(event, data) {
-  $(document).trigger(event, data);
-}
-function bind(event, handler) {
-  $(document).bind(event, handler);
-}
 
 $(function(){
+  function trigger(event, data) {
+    $(document).trigger(event, data);
+  }
+  function bind(event, handler) {
+    $(document).bind(event, handler);
+  }
+
+  var symbolsRepo = {SGD: '$', ZAR: 'R',
+    USD: '$', AUD: '$', BRL: 'R$', CAD: '$', CNY: '¥',
+    CZK: 'Kč', EUR: '€', GBP: '£', ILS: '₪', JPY: '¥',
+    NOK: 'kr', NZD: '$', PLN: 'zł', RUB: 'RUB', SEK: 'kr'
+  };
+
+  var singleHtml =  '<span class="biticker-value">= #value#</span><span class="biticker-bids">Ask: #ask# &nbsp; Bid: #bid#</span>';
+
   var fetchDataForCurrency = function(currency){
     $.ajax({
       url: 'https://api.bitcoinaverage.com/ticker/'+currency+'?v=' + Math.random(),
       type: 'GET',
       dataType: 'json',
       success: function(json){
-        var data = {currency: currency, json: json};
-        trigger('biticker:data-ready', data);
+        updateTicker(currency, json);
       }
     });
   };
-  var tickers = $('div.biticker');
-  tickers.each(function(){
-    var ticker = $(this);
+
+  var createTicker = function(ticker){
     var currency = ticker.data('currency');
     fetchDataForCurrency(currency);
     setInterval(function(){fetchDataForCurrency(currency);}, 10000);
+  };
+
+  var bindTicker = function(e, ticker){
+    ticker = $(ticker);
+    if(ticker.data('isBound'))
+      return;
+    createTicker(ticker);
+    ticker.data('isBound', true)
+  };
+
+  $('.biticker-container').each(function(){
+    var ticker = $(this);
+    if(ticker.data('isBound'))
+      return;
+    bindTicker(null, ticker);
   });
 
+  bind('biticker:new-ticker-created', bindTicker);
 
-  var updateTicker = function(e, data){
-    var ticker = tickers.filter('[data-currency='+data.currency+']');
-    var currency = ticker.data('currency');
-    var values = data.json;
-    var html =  '<div>'+
-                  '<span class="currency">BTC/'+currency+'</span>: ' +
-                  '<span class="value">' + values.last +'</span>' +
-          //      'ask: ' + values.ask + '<br />'+
-          //      'bid: ' + values.bid + '<br />'+
-                '</div>';
+  var updateTicker = function(currency, data){
+    var ticker = $('[data-currency='+currency+']');
+    var symbol = symbolsRepo[currency];
+    var html =  singleHtml.replace('#value#', symbol + data.last)
+                          .replace('#ask#', symbol + data.ask)
+                          .replace('#bid#', symbol + data.bid);
     ticker.html(html);
   };
-  bind('biticker:data-ready', updateTicker);
 });
 
