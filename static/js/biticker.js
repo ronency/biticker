@@ -14,12 +14,6 @@
     }
   };
   checkReady(function($) {
-    $("<link/>", {
-      rel: "stylesheet",
-      //type: "text/plain",
-      href: "https://raw.github.com/ronency/biticker/master/static/css/biticker.css"
-    }).appendTo("head");
-
     function trigger(event, data) {
       $(document).trigger(event, data);
     }
