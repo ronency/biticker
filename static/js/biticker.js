@@ -1,11 +1,6 @@
 
 
 (function(){
-  var link = document.createElement("LINK");
-  link.href = 'https://raw.github.com/ronency/biticker/master/static/css/biticker.css';
-  link.type = 'text/css';
-  link.rel = 'stylesheet';
-  document.getElementsByTagName("head")[0].appendChild(link);
   var script = document.createElement("SCRIPT");
   script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js';
   script.type = 'text/javascript';
@@ -19,6 +14,12 @@
     }
   };
   checkReady(function($) {
+    $("<link/>", {
+      rel: "stylesheet",
+      type: "text/css",
+      href: "https://raw.github.com/ronency/biticker/master/static/css/biticker.css"
+    }).appendTo("head");
+
     function trigger(event, data) {
       $(document).trigger(event, data);
     }
