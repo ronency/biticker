@@ -32,7 +32,7 @@
     };
 
     var singleTemplate = '<div class="biticker-container #theme#" data-currency="#currency#"></div>';
-    var jsCode = '\n<script type="text/javascript" src="https://raw.github.com/ronency/biticker/master/static/js/biticker.js"></script>';
+    var jsCode = '\n<script type="text/javascript" src="http://ronency.github.io/biticker/javascripts/biticker.js"></script>';
     var currencySelector = $('#currency-selector');
     var themeSelector = $('#theme-selector');
     var singleTickerCode = $('#biticker-single');
