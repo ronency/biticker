@@ -14,6 +14,7 @@
     }
   };
   checkReady(function($) {
+    $('<link />', {rel:'stylesheet', type:'text/css', href: 'http://ronency.github.io/biticker/stylesheets/biticker.css'}).appendTo('head');
     function trigger(event, data) {
       $(document).trigger(event, data);
     }
