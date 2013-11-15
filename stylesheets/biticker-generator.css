@@ -3,3 +3,5 @@ textarea {width:100%;height:70px;display:block;clear:both;background-color: #303
     border: medium none;color: #F2F2F2;padding: 15px;font-size:14px;
 }
 .preview-container {margin-bottom:20px;}
+.donations {margin:15px 0px 0px;}
+.donations div {margin:0px;color: #F2F2F2;padding:10px 10px 10px 34px;width:400px;background:#303030 url('../images/bitcoin-25.png') no-repeat 6px 6px;}
