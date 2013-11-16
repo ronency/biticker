@@ -2,7 +2,7 @@ Biticker
 ========
 
 ###Demo:
-The fastes way is just to try the [demo page](http://ronency.github.io/biticker/)
+The fastess way is just to try the [DEMO PAGE](http://ronency.github.io/biticker/)
 
 ###The Code:
 ```
