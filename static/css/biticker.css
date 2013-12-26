@@ -48,6 +48,6 @@
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EDEDED), color-stop(1, #7D7D7D));
     background-image: -webkit-linear-gradient(top, #EDEDED 0%, #7D7D7D 100%);
     background-image: linear-gradient(to bottom, #EDEDED 0%, #7D7D7D 100%);
-}
+} 
 .biticker-container.biticker-gray .biticker-bids {color:#444;}
 
