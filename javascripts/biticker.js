@@ -44,7 +44,7 @@
     var createTicker = function(ticker){
       var currency = ticker.data('currency');
       fetchDataForCurrency(currency);
-      setInterval(function(){fetchDataForCurrency(currency);}, 30000);
+      setInterval(function(){fetchDataForCurrency(currency);}, 90000);
     };
 
     var bindTicker = function(e, ticker){
