@@ -1,0 +1,53 @@
+.biticker-container {display:inline-block;width:auto;padding:8px 8px 5px;border:solid 1px #666;border-radius:4px;}
+.biticker-container .content {opacity:1;transition:all 500ms;}
+.biticker-container.biticker-loading .content {opacity:0;}
+.biticker-container .biticker-value {display:block;padding-left:30px;background:url('../images/bitcoin-25.png')no-repeat;font-size:24px;color:#555;}
+.biticker-container .biticker-bids {display:block;font-size:12px;color:#aaa;}
+
+.biticker-container.biticker-light {
+    background-image: -ms-linear-gradient(top, #FEFFEB 0%, #EFEFBA 100%);
+    background-image: -moz-linear-gradient(top, #FEFFEB 0%, #EFEFBA 100%);
+    background-image: -o-linear-gradient(top, #FEFFEB 0%, #EFEFBA 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FEFFEB), color-stop(1, #EFEFBA));
+    background-image: -webkit-linear-gradient(top, #FEFFEB 0%, #EFEFBA 100%);
+    background-image: linear-gradient(to bottom, #FEFFEB 0%, #EFEFBA 100%);
+}
+.biticker-container.biticker-light .biticker-bids {color:#888;}
+.biticker-container.biticker-dark {border-color:#DDD;
+    background-image: -ms-linear-gradient(top, #51524B 0%, #030302 100%);
+    background-image: -moz-linear-gradient(top, #51524B 0%, #030302 100%);
+    background-image: -o-linear-gradient(top, #51524B 0%, #030302 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #51524B), color-stop(1, #030302));
+    background-image: -webkit-linear-gradient(top, #51524B 0%, #030302 100%);
+    background-image: linear-gradient(to bottom, #51524B 0%, #030302 100%);
+}
+.biticker-container.biticker-dark .biticker-value,
+.biticker-container.biticker-darkred .biticker-value,
+.biticker-container.biticker-darkblue .biticker-value {color:#DDD;}
+.biticker-container.biticker-darkblue {border-color:#DDD;
+    background-image: -ms-linear-gradient(top, #0017AD 0%, #020829 100%);
+    background-image: -moz-linear-gradient(top, #0017AD 0%, #020829 100%);
+    background-image: -o-linear-gradient(top, #0017AD 0%, #020829 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0017AD), color-stop(1, #020829));
+    background-image: -webkit-linear-gradient(top, #0017AD 0%, #020829 100%);
+    background-image: linear-gradient(to bottom, #0017AD 0%, #020829 100%);
+}
+.biticker-container.biticker-darkred {border-color:#DDD;
+    background-image: -ms-linear-gradient(top, #AD0000 0%, #420000 100%);
+    background-image: -moz-linear-gradient(top, #AD0000 0%, #420000 100%);
+    background-image: -o-linear-gradient(top, #AD0000 0%, #420000 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #AD0000), color-stop(1, #420000));
+    background-image: -webkit-linear-gradient(top, #AD0000 0%, #420000 100%);
+    background-image: linear-gradient(to bottom, #AD0000 0%, #420000 100%);
+}
+
+.biticker-container.biticker-gray {
+    background-image: -ms-linear-gradient(top, #EDEDED 0%, #7D7D7D 100%);
+    background-image: -moz-linear-gradient(top, #EDEDED 0%, #7D7D7D 100%);
+    background-image: -o-linear-gradient(top, #EDEDED 0%, #7D7D7D 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EDEDED), color-stop(1, #7D7D7D));
+    background-image: -webkit-linear-gradient(top, #EDEDED 0%, #7D7D7D 100%);
+    background-image: linear-gradient(to bottom, #EDEDED 0%, #7D7D7D 100%);
+}
+.biticker-container.biticker-gray .biticker-bids {color:#444;}
+
