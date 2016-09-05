@@ -1,6 +1,6 @@
 {
   "name": "biticker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Bitcoin exchange rates widget",
   "main": "static/js/biticker.js",
   "scripts": {
