@@ -1,0 +1,36 @@
+{
+    "name": "biticker",
+    "title": "Biticker",
+    "description": "Bitcoin exchange rates widget.",
+    "keywords": [
+        "bitcoin",
+        "plugin",
+        "widget",
+        "currency"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "ronency",
+        "url": "https://github.com/ronency"
+    },
+    "maintainers": [
+        {
+            "name": "ronency",
+            "email": "ronencypis@gmail.com",
+            "url": "https://github.com/ronency"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://opensource.org/licenses/mit-license.php"
+        }
+    ],
+    "bugs": "https://github.com/ronency/biticker/issues",
+    "homepage": "http://biticker.com",
+    "docs": "https://github.com/ronency/biticker",
+    "download": "http://biticker.com",
+    "dependencies": {
+        "jquery": ">=2.0"
+    }
+}
