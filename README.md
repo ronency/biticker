@@ -18,4 +18,4 @@ It is possible to have multiple widgets on a single page (for different currenci
 ###Funny Title!
 If you feel nice today, and this widget is helpful to you in any way, or even if it's not, coins will be a very nice way to say "Thank you, you are soooo cool!!!"
 
-My Bitcoin address is: 1KZDVHiRQL2HecpQosF3g5otGGxeG8T4cC
+My Bitcoin address is: 1Byh7g3XqWWicGoJJftZojWvqKZSoH6T6L
